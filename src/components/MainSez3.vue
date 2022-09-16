@@ -1,7 +1,7 @@
 <template>
    <div class="container-3">
         <div>
-            <h1 class="title-sez3">RECENT CAUSES</h1>
+            <h1 class="title-sez3">recent causes</h1>
         </div>
         <div>
             <hr class="top">
@@ -9,40 +9,31 @@
         <div>
             <p class="paragraph-sez3">We run projects in over 30 countries in 5 contintents</p>
         </div>
-        
         <div class="flex">
             <div class="card-sez3">
                 <img class="img-1 im" src="../img/avada-charity-fair-trade-featured-200x150.jpg" alt="#">
             </div>
 
             <div class="card-sez3">
-                <img class="img-2 im" src="../img/avada-charity-shelter-featured-400x300.jpg" alt="#">
+                <img class="im" src="../img/avada-charity-shelter-featured-400x300.jpg" alt="#">
             </div>
 
             <div class="card-sez3">
-                <img class="img-3 im" src="../img/avada-charity-farming-featured-600x450.jpg" alt="#">
+                <img class="im" src="../img/avada-charity-farming-featured-600x450.jpg" alt="#">
             </div>
 
             <div class="card-sez3">
-                <img class="img-4 im" src="../img/avada-charity-vaccines-featured-400x300.jpg" alt="#">
+                <img class="im" src="../img/avada-charity-vaccines-featured-400x300.jpg" alt="#">
             </div>
-
-        </div>
-       
-   </div>
-  
+        </div>   
+   </div> 
 </template>
-
-
-
 
 <script>
 export default {
     name: 'MainSez3',
 }
 </script>
-
-
 
 <style>
      .container-3{
@@ -55,15 +46,15 @@ export default {
         color: black;
         text-align: center;
         padding-top: 100px;
-        font-size: 34px;
+        font-size: 36px;
         font-weight: 500px;
         line-height: 36px;
-        letter-spacing: 2px;
-        font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+        letter-spacing: 1px;
+        font-family:'Montserrat', sans-serif;
     }
 
     .paragraph-sez3{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Raleway', sans-serif;
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
@@ -71,7 +62,6 @@ export default {
         text-align: center;
         color: grey;
     }
-
 
     .card-sez3{
         margin-top: 110px;
@@ -83,9 +73,11 @@ export default {
         cursor: pointer;
     }
 
-    /* .im:hover{
+    .im:hover{
         background-color: rgba(242, 192, 103, 0.7);
-    } */
+        transition: 500ms;
+        opacity: 0.4; 
+    } 
 
     .img-1{
         margin-left: 195px;
@@ -99,22 +91,9 @@ export default {
         display: flex;
         cursor: pointer;
     }
+
     .slid:hover{
         background-color: rgb(64, 130, 146);
         transition:400ms;
-
-    }
-
-    .titl-slid{
-        text-align: center;
-        color: white;
-        margin-top: 60px;
-        margin-left: 835px;
-        font-style: normal;
-        font-weight: 500px;
-        line-height: 38px;
-        font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-        cursor: pointer;
-        letter-spacing: 2px;
     }
 </style>

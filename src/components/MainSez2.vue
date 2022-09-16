@@ -18,19 +18,19 @@
             </div>
             <div class="card">
                 <i class="fa-solid fa-stethoscope icon"></i>
-                <h3 class="title-3">Clean Water</h3>
+                <h3 class="title-3">Vaccinations</h3>
                 <p id="paragraphID">Nullam convallis, orci in congue aliquet, diam mauris cursus urna, Id maximus lectus magna maximus.</p>
                 <button class="butt-hover">Learn More</button>
             </div>
             <div class="card">
                 <i class="fa-solid fa-graduation-cap icon"></i>
-                <h3 class="title-3">Clean Water</h3>
+                <h3 class="title-3">Education</h3>
                 <p id="paragraphID">Nullam convallis, orci in congue aliquet, diam mauris cursus urna, Id maximus lectus magna maximus.</p>
                 <button class="butt-hover">Learn More</button>
             </div>
             <div class="card">
                 <i class="fa-solid fa-leaf icon"></i>
-                <h3 class="title-3">Clean Water</h3>
+                <h3 class="title-3">Farming</h3>
                 <p id="paragraphID">Nullam convallis, orci in congue aliquet, diam mauris cursus urna, Id maximus lectus magna maximus.</p>
                 <button class="butt-hover">Learn More</button>
             </div>
@@ -51,6 +51,7 @@ export default {
         max-width: 100%;
         height: 920px;
         background-image: url(../img/home-content-bg-2.jpg);
+        background-attachment:fixed;
         background-position: center;
     }
 
@@ -76,11 +77,11 @@ export default {
         font-style: normal;
         font-weight: 500;
         letter-spacing: 3px;
-        font-family:  'Open Sans', 'Helvetica Neue', sans-serif;
+        font-family:'Montserrat', sans-serif;
     }
 
     .paragraph2{
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family:'Raleway', sans-serif;
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
@@ -100,16 +101,17 @@ export default {
     .butt-hover{
         background-color: rgb(242, 192, 103);
         color: white;
-        font-family: Montserrat;
+        font-family:'Montserrat', sans-serif;
         font-weight: 500;
         font-style: normal;
         font-size: 14px;
-        padding: 15px 45px; 
+        padding: 15px 65px; 
         border: 0;
-        margin-left: 60px;
+        margin-left: 45px;
         margin-top: 35px;
         cursor: pointer;
     }
+
     .butt-hover:hover{
         background-color: rgb(38, 46, 68);
     }
@@ -119,10 +121,11 @@ export default {
         letter-spacing: normal;
         font-weight: 400px;
         font-size: 16px;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-family: 'Raleway', sans-serif;
         color: lightgray;
         text-align: center;
     }
+    
     .title-3{
         color: white;
         text-align: center;
@@ -133,6 +136,7 @@ export default {
         line-height: 28px;
         margin-top: 10px;
         margin-bottom: 24px;
+        cursor: pointer;
     }
 
     .icon{

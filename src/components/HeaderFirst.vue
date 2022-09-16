@@ -8,18 +8,16 @@
                 <ul>
                     <li><a class="home" href="#">Home</a></li>
                     <li><a class="hover" href="#">Mission</a></li>
-
-                    <li><a class="hover" href="#">Causes</a>
+                    <li><a class="hover-causes" href="#">Causes <i class="fa-solid fa-arrow-down"></i></a>
                          <ul>
-                            <li><a class="hover" href="#">fair trade</a></li>
-                            <li><a class="hover" href="#">Farming</a></li>
-                            <li><a class="hover" href="#">Vaccines</a></li>
-                            <li><a class="hover" href="#">Education</a></li> 
-                            <li><a class="hover" href="#">Clean water</a></li>
-                            <li><a class="hover" href="#">Shelter</a></li>
+                            <li><a class="hover-1" href="#">fair trade</a></li>
+                            <li><a class="hover-1" href="#">Farming</a></li>
+                            <li><a class="hover-1" href="#">Vaccines</a></li>
+                            <li><a class="hover-1" href="#">Education</a></li> 
+                            <li><a class="hover-1" href="#">Clean water</a></li>
+                            <li><a class="hover-1" href="#">Shelter</a></li>
                         </ul>
                     </li>
-
                     <li><a class="hover" href="#">Journal</a></li>
                     <li><a href="#"><button class="butt-hov">Donate</button></a></li>
                 </ul>
@@ -77,8 +75,10 @@ export default {
 
     .navbar li > ul{
         opacity: 0;
-
+        list-style-type:none;
+        background-color: white;
     }
+
 
     .navbar li:hover > ul{
         opacity: 1;
@@ -100,27 +100,32 @@ export default {
 
     #title {
         margin-bottom: 20px;
-        font-family: Montserrat;
+        font-family:'Montserrat', sans-serif;
         font-weight: 500;
         font-size: 70px;
+        font-style: normal;
+        letter-spacing: 2px;
+        line-height: 77px;
     }
 
     #paragraph{
         font-size: 22px;
         font-style: normal;
         font-weight: 400;
-        font-family: Raleway;
+        font-family: 'Raleway', sans-serif;
     }
 
     .button{
-        padding: 15px 25px;
+        padding: 15px 45px;
         background-color:rgba(255,255,255,0.0);
         color: white;
         border-color: white;
         margin-right: 10px;
         margin-top:30px;
         cursor: pointer;
+        font-family:'Montserrat', sans-serif;
     }
+
     .button:hover{
         color: rgb(242, 192, 103);
         border-color:rgb(242, 192, 103);
@@ -129,19 +134,19 @@ export default {
     .button-2{
         border-color: rgb(242, 192, 103);
         background-color:rgba(242,192,103,0.0);
-        padding: 15px 25px;
+        padding: 15px 45px;
         color:rgb(242, 192, 103);
         margin-left: 10px;
         margin-top:30px;
         cursor: pointer;
-
+        font-family:'Montserrat', sans-serif;
     }
+
     .button-2:hover{
         background-color: rgb(38, 46, 68);
         border-color: white;
         color: white;
     }
-
 
     .home{
         color: rgb(242, 192, 103);
@@ -157,12 +162,34 @@ export default {
     .hover:hover{
         color: rgb(242, 192, 103);
         text-decoration: none;
+        transition: 500ms;
+    }
+
+    .hover-causes{
+        color:white;
+        text-decoration: none;
+    }
+    .hover-causes:hover{
+        color: rgb(242, 192, 103);
+        text-decoration: none;
+        transition: 500ms;
+    }
+
+    .hover-1{
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .hover-1:hover{
+        background-color:rgb(242, 192, 103);
+        color: white;
     }
 
     .butt-hov{
         background-color: rgb(242, 192, 103);
         color: white;
-        font-family: Montserrat;
+        font-family: 'Montserrat', sans-serif;
         font-weight: 500;
         font-style: normal;
         font-size: 14px;
